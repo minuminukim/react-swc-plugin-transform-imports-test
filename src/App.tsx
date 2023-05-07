@@ -2,8 +2,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from 'react';
-import { DirectionsRun } from '@mui/icons-material';
-import { flatten } from 'lodash';
+import DirectionsRun from '@mui/icons-material/DirectionsRun';
+import flatten from 'lodash/flatten';
 
 const App = () => {
   const [showList, setShowList] = React.useState(false);
