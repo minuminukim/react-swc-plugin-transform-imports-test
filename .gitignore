@@ -47,3 +47,5 @@ Thumbs.db
 # typesscript
 *.tsbuildinfo
 next-env.d.ts
+
+stats.json
