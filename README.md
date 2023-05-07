@@ -1,4 +1,4 @@
-# import cost test in a react app built with webpack and swc
+# Testing `@swc/plugin-transform-imports` in a React SPA bundled by webpack
 
 ## named imports
 
