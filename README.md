@@ -33,4 +33,19 @@ import { DirectionsRun } from '@mui/icons-material';
 import { flatten } from 'lodash';
 ```
 
+```js
+// .swcrc
+[
+  '@swc/plugin-transform-imports',
+  {
+    '@mui/icons-material': {
+      transform: '@mui/icons-material/{{member}}',
+    },
+    lodash: {
+      transform: 'lodash/{{member}}',
+    },
+  },
+];
+```
+
 <img src="./docs/named-import-swc-plugin.png" width="500" />
