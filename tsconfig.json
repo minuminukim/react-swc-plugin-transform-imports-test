@@ -6,6 +6,7 @@
       "dom.iterable",
       "esnext"
     ],
+    "sourceMap": true,
     "rootDir": ".",
     "allowJs": true,
     "checkJs": false,
@@ -35,7 +36,7 @@
     "**/*.cjs",
     "**/*.mjs",
     ".next/types/**/*.ts",
-    "src/index.js"
+    "src/index.tsx"
   ],
   "exclude": [
     "node_modules",
