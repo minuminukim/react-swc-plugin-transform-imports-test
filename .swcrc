@@ -1,23 +1,27 @@
 [
   {
-    "test": ".tsx?$",
+    "test": ".[jt]sx?$",
     "jsc": {
       "parser": {
         "syntax": "typescript",
         "tsx": true,
         "dynamicImport": true,
         "decorators": false
-      }
-    }
-  },
-  {
-    "test": ".jsx?$",
-    "jsc": {
-      "parser": {
-        "syntax": "ecmascript",
-        "jsx": true,
-        "dynamicImport": true,
-        "decorators": false
+      },
+      "experimental": {
+        "plugins": [
+          [
+            "@swc/plugin-transform-imports",
+            {
+              "@mui/icons-material": {
+                "transform": "@mui/icons-material/{{member}}"
+              },
+              "lodash": {
+                "transform": "lodash/{{member}}"
+              }
+            }
+          ]
+        ]
       }
     }
   }
